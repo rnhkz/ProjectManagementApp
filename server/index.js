@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 connectDB();
-app.routes(cors());
+app.use(cors());
 
 app.use(
     '/graphql',
